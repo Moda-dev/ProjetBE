@@ -1,0 +1,16 @@
+{
+    "name": "jcl/bookoin",
+    "description": "Projet de gestion de livres",
+    "authors": [
+        {
+            "name": "Bookoin Team",
+            "email": "bookointeam@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+       "psr-4" : {
+            "modele\\" : "modele"
+        }
+    }
+}
