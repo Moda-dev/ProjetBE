@@ -13,30 +13,30 @@ use \modele\Securite;
 $secuVarUrl = Securite::secuVar($_GET);
 
 // Ajout de la vue header
-//include "";
+include "vue/vue_header.php";
 
 // Liste des pages autorisées
-$listeBlanche = array('administration');
+$listeBlanche = array('adherent', 'enfant', 'livre', 'login', 'compta', 'admin', 'dossier', 'deconnexion');
 if(!empty($secuVarUrl['page']) AND isset($secuVarUrl['page']) AND $secuVarUrl['page'] != 'index'){
     // Securisation de la variable
     $page = $secuVarUrl['page'];
     // Recherche de la page dans le dosier controleur
-    if(in_array($page, $listeBlanche) AND file_exists('controller/'.$page.'.php')){
-        include('controller/'.$page.'.php');
+    if(in_array($page, $listeBlanche) AND file_exists('controller/controller_'.$page.'.php')){
+        include('controller/controller_'.$page.'.php');
     }
     else{
         // Page introuvée 
-        include('controller/404.php');
+        include('controller/controller_404.php');
     }
     
 }
 else{
     // Page par défaut
-    include('controller/index.php');
+    include('controller/controller_login.php');
 }
 
 // Ajout de la vue footer
-//include "";
+include "vue/vue_footer.php";
 
 
 
