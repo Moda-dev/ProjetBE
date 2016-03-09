@@ -4,7 +4,7 @@
   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MicroBlog</title>
+  <title>Bookoin</title>
   <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="favicon.ico" />
@@ -15,14 +15,20 @@
 </head>
 <body>
   <!-- Menu principal -->
-    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top menu-principal">
       <div class="container">
         <a class="navbar-brand" href="adherent">Bookoin</a>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="adherent"> + Adhérent</a></li>
             <li><a href="enfant">+ Enfant</a></li>
-            <li><a href="dossier">Dossier</a></li>
+            <li class="dropdown">
+              <a href="gestion_dossier.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dossier <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="dossier">Modification</a></li>
+                <li><a href="document">Documents</a></li>
+              </ul>
+            </li>
             <li><a href="livre">Livre</a></li>
             <li><a href="comptabilite">Comptabilité</a></li>
             <li><a href="administration">Administration</a></li>
@@ -31,5 +37,6 @@
         </div>
       </div>
     </div>
+    <div class="espace"></div>
      <!-- Contenu de la page -->
     <div class="container">

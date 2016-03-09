@@ -16,7 +16,7 @@ $secuVarUrl = Securite::secuVar($_GET);
 include "vue/vue_header.php";
 
 // Liste des pages autorisées
-$listeBlanche = array('adherent', 'enfant', 'livre', 'login', 'compta', 'admin', 'dossier', 'deconnexion');
+$listeBlanche = array('adherent', 'enfant', 'livre', 'login', 'compta', 'admin', 'dossier', 'deconnexion', 'document');
 if(!empty($secuVarUrl['page']) AND isset($secuVarUrl['page']) AND $secuVarUrl['page'] != 'index'){
     // Securisation de la variable
     $page = $secuVarUrl['page'];
