@@ -1,8 +1,18 @@
 $(document).ready(function(){
+  $("#ajoutEnfant").hide();
+  $("#addParent").hide();
+  
 	$("#addEnfant").click(function(){
 		$("#ajoutEnfant").show();
+    $("#addParent").show();
 		$('#ajoutAdherent').hide();
-      });
+  });
+  
+  $("#addParent").click(function(){
+    $("#addParent").hide();
+		$("#ajoutEnfant").hide();
+		$('#ajoutAdherent').show();
+  });
   		
 });
 
