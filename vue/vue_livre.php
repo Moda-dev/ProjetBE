@@ -1,3 +1,10 @@
+       <div class="titrePage">
+          <div><h3>Livres</h3></div>
+        </div>  
+          
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">        
+          <table class="table table-bordered table-striped table-responsive colBack">
       <div class="row">
         <div class="col-md-9 col-md-offset-1">
           <h4>Liste des livres</h4>            
@@ -21,6 +28,7 @@
                 <td>Maths pour les Nuls</td>
                 <td></td>
                 <td></td>
+                <td>Neuf</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -32,6 +40,7 @@
                 <td>Science simple</td>
                 <td></td>
                 <td></td>
+                <td>Bon</td>
                 <td></td>
                 <td></td>
                 <td></td>

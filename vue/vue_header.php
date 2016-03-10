@@ -32,14 +32,7 @@
             </li>
             <li><a href="index.php?page=livre">Livre</a></li>
             <li><a href="index.php?page=compta">Comptabilité</a></li>
-            <li class="dropdown">
-              <a href="gestion_dossier.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administration <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="index.php?page=admin">Ajout des livres</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Commande de livres</a></li>
-              </ul>
-            </li>
+            <li><a href="index.php?page=admin">Administration</a></li>
             <li><a href="index.php?page=login">Déconnexion</a></li>
           </ul>
         </div>

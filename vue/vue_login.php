@@ -18,7 +18,7 @@
                 <form id="loginform" class="form-horizontal" role="form" method="POST" action=""><!-- Ajouter le controler qui va bien-->            
                     <div class="input-group input">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                      <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="Identifiant">
+                      <input id="login-username" type="text" class="form-control" name="login" value="" placeholder="Identifiant">
                     </div>
                         
                     <div  class="input-group input">
