@@ -10,7 +10,8 @@ use \modele\Securite;
 
 
 // Securisation des variables
-$secuVarUrl = Securite::secuVar($_GET);
+$securite = new Securite();
+$secuVarUrl = $securite->secuVarGet($_GET);
 
 // Ajout de la vue header
 include "vue/vue_header.php";
