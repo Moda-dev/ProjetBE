@@ -13,6 +13,9 @@
     	<div class="panel panel-primary">
         <div class="panel-heading">
             <div class="panel-title">Ajout d'un enfant</div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title">Ajout d'un adhérent</div>
         </div>  
         <div class="panel-body" >
             <form id="signupform" class="form-horizontal" role="form" action="">
