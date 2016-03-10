@@ -2,6 +2,7 @@
   <div class="alert alert-success msg-info" role="alert" style="display: block">
     <strong> Parent ajouter avec succes : </strong> Voulez vous ajouter un enfant a ce parent?
     </br>
+    <button class="btn btn-primary" id ="addParent">Ajouter un parent</button>
     <button class="btn btn-primary" id ="addEnfant">Ajouter un enfant</button>
   </div>
   <div class="alert alert-danger msg-info" id="msg-error" role="alert" style="<?php if(isset($error) and $error == 1){echo "display: inline-block";}?>">
