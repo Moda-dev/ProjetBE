@@ -99,7 +99,9 @@
 
           <div class="form-group">
             <label for="option" class="col-md-3 control-label">Auteur</label>
-            
+            <div class="col-md-9">
+              <input type="text" class="form-control" name="edition" >
+            </div>
           </div>
 
           <div class="form-group">                              

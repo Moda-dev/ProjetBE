@@ -1,14 +1,10 @@
-       <div class="titrePage">
-          <div><h3>Livres</h3></div>
+       <div class="titrePage" style="margin-bottom: 45px;">
+          <div><h3>Liste des livres</h3></div>
         </div>  
           
       <div class="row">
         <div class="col-md-10 col-md-offset-1">        
           <table class="table table-bordered table-striped table-responsive colBack">
-      <div class="row">
-        <div class="col-md-9 col-md-offset-1">
-          <h4>Liste des livres</h4>            
-          <table class="table table-bordered colBack">
             <thead>
               <tr>
                 <th>ISBN</th>
@@ -31,7 +27,6 @@
                 <td>Neuf</td>
                 <td></td>
                 <td></td>
-                <td></td>
                 <td>2010</td>
                 <td></td>
               </tr>
@@ -41,7 +36,6 @@
                 <td></td>
                 <td></td>
                 <td>Bon</td>
-                <td></td>
                 <td></td>
                 <td></td>
                 <td>2014</td>

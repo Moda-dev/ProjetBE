@@ -17,7 +17,7 @@
   <!-- Menu principal -->
     <div class="navbar navbar-default navbar-fixed-top menu-principal">
       <div class="container">
-        <a class="navbar-brand" href="adherent">Bookoin</a>
+        <a class="navbar-brand" href="#">Bookoin</a>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.php?page=adherent"> + Adhérent</a></li>

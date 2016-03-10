@@ -15,7 +15,7 @@
         <div class="panel-title">Ajouter un parent</div>
     </div>  
     <div class="panel-body" >
-        <form id="signupform" class="form-horizontal" role="form" action="">
+        <form id="signupform" method="POST" class="form-horizontal" role="form" action="">
             
             <div id="signupalert" style="display:none" class="alert alert-danger">
                 <p>Error:</p>
@@ -57,8 +57,7 @@
             </div>
 
             <div class="form-group">                              
-              <button id="btn-signup" type="button" class="btn btn-success"><i class="icon-hand-right"></i>Ajouter un parent</button>
-              <!-- Redirection vers la page de connexion en jQuery -->
+              <button id="btn-signup" type="submit" class="btn btn-success"><i class="icon-hand-right"></i>Ajouter un parent</button>
             </div>  
         </form>
      </div>
@@ -133,33 +132,3 @@
      </div>
     </div>      
  </div>   
-      <div class="col-lg-6">
-      <div class="panel panel-default">
-	
-        <div class="panel-heading"> Ajouter un parent </div>
-   
-		<form role="form">
-			<div class="form-group input-group">
-				<span class="input-group-addon">Nom</span>
-				<input class="form-control" type="text" placeholder="Nom">
-			</div>
-			<div class="form-group input-group">
-				<span class="input-group-addon">Prénom</span>
-				<input class="form-control" type="text" placeholder="Prénom">
-			</div>
-			<div class="form-group input-group">
-				<span class="input-group-addon">Adresse</span>
-				<input class="form-control" type="text" placeholder="Adresse">
-			</div>
-			<div class="form-group input-group">
-				<span class="input-group-addon">Téléphone</span>
-				<input class="form-control" type="text" placeholder="Numéro de téléphone">
-			</div>
-			<div class="form-group input-group">
-				<span class="input-group-addon">Adresse Mail</span>
-				<input class="form-control" type="email" placeholder="Adresse Mail">
-			</div>
-			<button class="btn btn-primary" type="submit">Ajouter le parent</button>
-		</form>
-      </div>
-     </div>
