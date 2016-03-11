@@ -41,7 +41,7 @@
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Commande de livres</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Gestion de livres</a></li>
+                <li><a href="index.php?page=gestion_livre">Gestion de livres</a></li>
               </ul>
             </li>
             <li><a href="index.php?page=login">Déconnexion</a></li>
