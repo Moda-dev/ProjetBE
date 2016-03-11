@@ -1,6 +1,6 @@
-
 <?php 
-
+// Démarrage de la session
+session_start();
 // Autoloader de composer
 require "vendor/autoload.php";
 
@@ -29,13 +29,11 @@ if(!empty($secuVarUrl['page']) AND isset($secuVarUrl['page']) AND $secuVarUrl['p
         // Page introuvée 
         include('controller/controller_404.php');
     }
-    
 }
 else{
     // Page par défaut
     include('controller/controller_login.php');
 }
-
 // Ajout de la vue footer
 include "vue/vue_footer.php";
 
