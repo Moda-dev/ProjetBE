@@ -56,6 +56,15 @@ class Modele_user{
 		$this->id = $idUser;
 		return $idUser;
 	}
+
+	public function checkCompteUser($pseudo, $idUser){
+		$bdd = new Bdd();
+		$connexionBase = $bdd->connexionBdd();
+		$daoUser = new User();
+		$idUser = $daoUser->checkCompteUser($connexionBase, $pseudo, $idUser);
+		$this->id = $idUser;
+		return $idUser;
+	}
 	
 	// Creation de token de session
 	public function setToken(){
