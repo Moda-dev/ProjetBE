@@ -267,6 +267,10 @@ body {
   background-color: white;
 }
 
+#ajoutEnfant{
+  display: none;
+}
+
 /**
  * Change design of input file 
  */
