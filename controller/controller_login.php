@@ -9,9 +9,10 @@ $error = 0;
 $message = "";
  
 // Verification du l'utilisateur est déjà connecté
-if(isset($_SESSION) AND !empty($_SESSION) AND $_SESSION['username'] != "" AND $_SESSION['token'] != ""){
+if(isset($_SESSION) AND !empty($_SESSION) AND $_SESSION['login'] != "" AND $_SESSION['idUser'] != ""){
+	var_dump($_SESSION);
 	$modele_user = new Modele_user();
-	$VerificationConnexion = $modele_user->checkConnectUser($_SESSION['username'], $_SESSION['idUser']);
+	$VerificationConnexion = $modele_user->checkConnectUser($_SESSION['login'], $_SESSION['idUser']);
 	// Verification du couple login et password
 	if($VerificationConnexion){
 		header('Location: /index.php?page=adherent');
