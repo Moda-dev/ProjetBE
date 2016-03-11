@@ -39,10 +39,10 @@
                   <label for="password" class="col-md-3 control-label">Etablissement</label>
                   <div class="col-md-9">
                     <select class="form-control">
-						<option>1ère S</option>
-						<option>1ère ES</option>
-						<option>Seconde</option>
-					</select>
+          						<option>1ère S</option>
+          						<option>1ère ES</option>
+          						<option>Seconde</option>
+          					</select>
                   </div>
                 </div>
 
@@ -61,10 +61,10 @@
                   <label for="option" class="col-md-3 control-label">Option</label>
                   <div class="col-md-9">
                     <select class="form-control">
-						<option>Mathématique</option>
-						<option>Latin</option>
-						<option>...</option>
-					</select>
+          						<option>Mathématique</option>
+          						<option>Latin</option>
+          						<option>...</option>
+          					</select>
                   </div>
                 </div>
 

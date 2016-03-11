@@ -20,6 +20,8 @@
         <a class="navbar-brand" href="#">Bookoin</a>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
+        <?php if(isset($_SESSION['login']) AND $_SESSION['idUser'] AND !empty($_SESSION['login']) AND !empty($_SESSION['idUser']))
+              {  ?>
             <li class="active"><a href="index.php?page=adherent"> + Adhérent</a></li>
             <li><a href="index.php?page=enfant">+ Enfant</a></li>
             <li class="dropdown">
@@ -41,6 +43,11 @@
               </ul>
             </li>
             <li><a href="index.php?page=login">Déconnexion</a></li>
+            <?php }
+            else{
+              ?><li><a href="index.php">Connexion</a></li><?php
+              }?>
+
           </ul>
         </div>
       </div>

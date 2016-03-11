@@ -1,5 +1,5 @@
  <div class="retour-message">
-  <div class="alert alert-success msg-info" role="alert" style="display: block">
+  <div class="alert alert-success msg-info" role="alert" style="<?php if(isset($success) AND $success == 1){ echo("display: block"); } ?>">
     <strong> Parent ajouter avec succes : </strong> Voulez vous ajouter un enfant a ce parent?
     </br>
     <button class="btn btn-primary" id ="addParent">Ajouter un parent</button>
@@ -55,6 +55,17 @@
   	            <div class="col-md-9">
 	            	<input type="text" class="form-control" name="mail" >
 	            </div>
+            </div>
+
+            <div class="form-group">
+              <label for="mail" class="col-md-3 control-label">Association</label>
+                <div class="col-md-9">
+                <select class="form-control" name="association">
+                      <option value="1">PEEP</option>
+                      <option value="2">LMPE</option>
+                      <option value="3">ARBS</option>
+                </select>
+              </div>
             </div>
 
             <div class="form-group">                              
