@@ -13,8 +13,28 @@ $(document).ready(function(){
 		$("#ajoutEnfant").hide();
 		$('#ajoutAdherent').show();
   });
-  		
+
+  $('.btnAddEnfant').click(function(){
+    $('#ajoutEnfant').show();
+  });
+  // Remplissage de la liste classe
+  $('#nomEtablissement').on('change', function() {
+     $.ajax({
+        url : 'controller/controller_classes.php', // Le controller à appeler
+        type : 'POST', // Methode POST
+        data : { etablissement: this.value },
+        success: function(data){
+          console.log(data);
+          $('#classeEtablissement').html(data);
+        }
+      });
+  });
+
 });
+
+ function idParent(id){
+    $('#id-parent').val(id);
+  }
 
 /*
  * Permet la récupération du nom du fichier selectionné
