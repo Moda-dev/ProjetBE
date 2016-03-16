@@ -9,7 +9,7 @@ namespace modele;
 class User{
 	// Determine si l'utilsateur existe et donc peut ce connecter
 	public function connectUser($bdd, $pseudo, $mdp){
-		$VerifUser = $bdd->prepare('SELECT COUNT(*) as compteUser FROM UTILISATEUR WHERE login_utilisateur = :pseudo AND mdp_utilisateur = :mdp');
+		$VerifUser = $bdd->prepare('SELECT COUNT(*) as compteUser FROM utilisateur WHERE login_utilisateur = :pseudo AND mdp_utilisateur = :mdp');
 		$VerifUser->execute(array('pseudo' => $pseudo, 'mdp' => $mdp));
 		$reponse = $VerifUser->fetch();
 		return $reponse['compteUser'];
@@ -26,7 +26,7 @@ class User{
 
 	// Récuparation de L'id de l'utilisateur
 	public function getIdUser($bdd, $pseudo, $mdp){
-		$VerifUser = $bdd->prepare('SELECT id_utilisateur FROM UTILISATEUR WHERE login_utilisateur = :pseudo AND mdp_utilisateur = :mdp');
+		$VerifUser = $bdd->prepare('SELECT id_utilisateur FROM utilisateur WHERE login_utilisateur = :pseudo AND mdp_utilisateur = :mdp');
 		$VerifUser->execute(array('pseudo' => $pseudo, 'mdp' => $mdp));
 		$reponse = $VerifUser->fetch();
 		return $reponse['id_utilisateur'];
@@ -34,7 +34,7 @@ class User{
 
 	// Vérification de l'existance du compte utilisateur
 	public function checkCompteUser($bdd, $pseudo, $idUser){
-		$VerifUser = $bdd->prepare('SELECT COUNT(*) as compteUser FROM UTILISATEUR WHERE login_utilisateur = :pseudo AND id_utilisateur = :idUser');
+		$VerifUser = $bdd->prepare('SELECT COUNT(*) as compteUser FROM utilisateur WHERE login_utilisateur = :pseudo AND id_utilisateur = :idUser');
 		$VerifUser->execute(array('pseudo' => $pseudo, 'idUser' => $idUser));
 		$reponse = $VerifUser->fetch();
 		return $reponse['compteUser'];
