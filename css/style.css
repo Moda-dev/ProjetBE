@@ -299,3 +299,15 @@ input[readonly] {
   background-color: white !important;
   cursor: text !important;
 }
+
+.row h4{
+  margin-bottom: 45px;
+}
+
+.liste-parent{
+  margin-top: 25px;
+}
+
+.id-adherent{
+  display: none;
+}
