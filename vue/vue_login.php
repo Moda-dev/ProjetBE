@@ -29,7 +29,7 @@
                     <div style="margin-top:10px" class="form-group">
                         <!-- Button -->
                       <div class="col-sm-12 controls">
-                        <button type="submit" id="submit-login" class="btn btn-success">Submit</button>
+                        <button type="submit" id="submit-login" class="btn btn-success">Se connecter</button>
                       </div>
                     </div>  
               </form>     

@@ -9,93 +9,27 @@
               <tr>
                 <th>ISBN</th>
                 <th>Titre</th>
+                <th>Editeur</th>
+                <th>Année</th>
+                <th>Format</th>
+                <th>Auteur</th>
                 <th>Type</th>
                 <th>Catégorie</th>
-                <th>Etat</th>
-                <th>Editeur</th>
-                <th>Format</th>
-                <th>Année</th>
-                <th>Auteur</th>
               </tr>
             </thead>
             <tbody>
+            <?php foreach ($livres as $infoLivre) { ?>
               <tr>
-                <td>1234567789</td>
-                <td>Maths pour les Nuls</td>
-                <td></td>
-                <td></td>
-                <td>Neuf</td>
-                <td></td>
-                <td></td>
-                <td>2010</td>
-                <td></td>
+                <td><?php echo $infoLivre['isbn_livre']; ?></td>
+                <td><?php echo $infoLivre['titre_livre']; ?></td>
+                <td><?php echo $infoLivre['editeur_livre']; ?></td>
+                <td><?php echo $infoLivre['annee_livre']; ?></td>
+                <td><?php echo $infoLivre['format_livre']; ?></td>
+                <td><?php echo $infoLivre['auteur_livre']; ?></td>
+                <td><?php echo $infoLivre['type_livre']; ?></td>
+                <td><?php echo $infoLivre['categorie_livre']; ?></td>
               </tr>
-              <tr>
-                <td>1476567898</td>
-                <td>Science simple</td>
-                <td></td>
-                <td></td>
-                <td>Bon</td>
-                <td></td>
-                <td></td>
-                <td>2014</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
+            <?php } ?>
             </tbody>
           </table> 
 				</div>
