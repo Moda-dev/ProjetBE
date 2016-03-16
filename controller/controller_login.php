@@ -7,10 +7,9 @@ use \modele\Modele_user;
 // Déclaration des variables
 $error = 0;
 $message = "";
- 
+
 // Verification du l'utilisateur est déjà connecté
 if(isset($_SESSION) AND !empty($_SESSION) AND $_SESSION['login'] != "" AND $_SESSION['idUser'] != ""){
-	var_dump($_SESSION);
 	$modele_user = new Modele_user();
 	$VerificationConnexion = $modele_user->checkConnectUser($_SESSION['login'], $_SESSION['idUser']);
 	// Verification du couple login et password
@@ -24,11 +23,9 @@ if(isset($_SESSION) AND !empty($_SESSION) AND $_SESSION['login'] != "" AND $_SES
 	}
 }
 else{
-
 	// Détermine si un requête de type POST est envoyé à la page
 	if(isset($_POST) and !empty($_POST)){
-		// Formulaire pas complet
-		if(!empty($_POST['login']) AND !empty($_POST['password'])){
+		if(isset($_POST['login']) AND !empty($_POST['login']) AND $_POST['password'] AND !empty($_POST['password'])){
 			// Sécurisation des variables (Protection contre les injections SQL)
 			$securite = new Securite();
 			$secuVarPost = $securite->secuVarGet($_POST);
@@ -60,8 +57,6 @@ else{
 		}
 	}
 }
-
-
 // Récupération de le vue
 include('vue/vue_login.php');
 ?>
